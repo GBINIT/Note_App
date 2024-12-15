@@ -1,0 +1,197 @@
+*{
+    margin: 0;padding: 0;
+}
+/* Dark theme styles */
+body {
+    background-color:#1a1a1a;
+    color: #191919;
+  }
+  
+  /* Scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    /* margin-left: 10px; */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #2b2b2b; /* Color of the track */
+    border-radius: 6px; /* Rounded corners for the track */
+    margin: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Color of the thumb (draggable part) */
+    border-radius: 6px; /* Rounded corners for the thumb */
+    border: 2px solid #1a1a1a; /* Border around the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Color of the thumb on hover */
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #777; /* Color of the thumb when dragged */
+  }
+.notes{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    height: 100vh;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    /* background-color: khaki; */
+
+}
+
+.add-btn{
+    margin: 10px;
+    margin-left: 21px;
+    padding: 20px;
+    width: 20.5vw;
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    background-color: #e63e3e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.add-btn:hover{
+ background-color: #f04848;
+ opacity: 0.8;
+ border: #626464 1px;
+ border-radius: 5px;
+}
+
+.list-note{
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 80vh;
+    overflow: auto;
+    /* background-color:rgba(239, 233, 233, 0.82); */
+    transition: .3s;
+    padding: 10px;
+    /* backdrop-filter: blur(20px); */
+}
+
+.list-note-item{
+    border-radius: 10px;
+    background-color: rgba(248, 249, 249, 0.678);
+    padding: 5px;
+    margin-top: 5px;
+    max-height: 20vh;
+    max-width: 20vw;
+    /* overflow: auto; */
+    transition: .2s;
+    backdrop-filter: blur(10px);
+}
+.list-note-item:hover{
+    background: #fd8e8e;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #000000;
+    outline: 1px solid rgb(229, 229, 230);
+}
+
+.note-title{
+    margin: 5px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.note-content{
+    margin: 5px;
+}
+
+.note-time{
+    position:relative;
+    bottom: 9px;
+    font-size: small;
+    color: rgb(1, 1, 1);
+    text-align: right;
+    font-style: italic;
+}
+
+.divider{
+    position: absolute;
+    height: 100vh;
+    border-color: rgb(204, 206, 202);
+    left: 24vw;
+}
+
+.note-preview{
+    display: flex;
+    flex-direction: column;
+    gap: px;
+    padding: 2em 3em;
+    margin-left: -60px;
+    flex-grow: 1;
+    /* background-color: #fff;/ */
+
+}
+
+.note-head,.note-body{
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.note-head{
+    background-color:#1a1a1a ;
+    color:#fff;
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    /* height: 20vh; */
+    
+}
+
+.note-body{
+    background-color:#1a1a1a ;
+    color:#fff;
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    /* margin-top: 2em; */
+    resize: none;
+}
+
+.delete-btn{
+    background:none;
+    outline: none;
+    border: none;
+    /* position: relative; */
+    /* transform: translate(10px,20px); */
+    cursor: pointer;
+}
+
+/* .delete-btn:hover{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #cac1c1;
+} */
+.msg{
+    display: flex;
+    flex-direction: column;
+    gap: px;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+.greet-msg{
+    color: #f79f9f;
+    font-size: larger;
+}
+
+.info{
+    color: #ea8989;
+}
